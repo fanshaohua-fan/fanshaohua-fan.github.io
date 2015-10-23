@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "Linux 命令 : Date"
+date:   2015-10-23 17:12:00
+categories: linux
+---
 #Linux命令 : Date
 
 显示系统时间
