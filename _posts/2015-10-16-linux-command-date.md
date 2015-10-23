@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Linux 命令 : Date"
-date:   2015-10-23 17:12:00
 categories: linux
+tags:   linux shell
 ---
 #Linux命令 : Date
 
