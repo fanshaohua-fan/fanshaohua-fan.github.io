@@ -7,6 +7,7 @@ tags:	 linux shell
 #Linux命令: ln
 
 建立软连接:
+
 ```bash
 $sudo ln -s ruby2.0 ruby
 $ll | grep ruby
@@ -16,6 +17,7 @@ lrwxrwxrwx  1 root root           7 Oct 20 17:46 **ruby -> ruby2.0***
 ```
 
 删除软连接:
+
 ```bash
 $sudo rm ruby
 ```
