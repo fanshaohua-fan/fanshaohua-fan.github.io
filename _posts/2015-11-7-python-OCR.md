@@ -17,7 +17,7 @@ sudo pip install pytesseract
 from PIL import Image
 import pytesseract
 
-ocr = Image.open('~/Pictures/rand.jpg')
+ocr = Image.open('./Pictures/rand.jpg')
 pytesseract.image_to_string(ocr)
 '240323'
 ```
