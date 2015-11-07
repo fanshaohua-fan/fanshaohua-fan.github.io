@@ -1,4 +1,11 @@
 
+---
+layout: post
+title:  "Python OCR 验证码识别"
+categories: python
+tags:   python ocr pytesseract
+---
+
 #Python OCR 验证码识别（pytesseract）
 
 安装：
