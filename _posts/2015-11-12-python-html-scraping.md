@@ -44,4 +44,14 @@ for data in delivery:
 离开处理中心,发往中国 北京
 荷兰
 
+delivery = tree.xpath('//table[@id="showTable"]/tr')
+for tr in delivery:
+    for td in tr.itertext():
+        status += td.strip() + ' '
+    status += '\n'
+    
+ 2015-11-10  06:40:00  收寄  荷兰    
+ 2015-11-11  08:03:00  离开处理中心,发往中国 北京  荷兰    
+ 2015-11-12  10:12:00  收寄  荷兰
+
 ```
