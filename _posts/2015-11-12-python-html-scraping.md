@@ -26,10 +26,10 @@ lxml.html的样例有使用XPath，所以决定先通过lxml.html试试，能否
 ```python
 from lxml import html
 tree = html.parse('ems.html').getroot()
-delivery = tree.xpath('//div[@id="s_div"]/table/tr/td/text()')
+delivery = tree.xpath('//table[@id="showTable"]/tr/td/text()')
 
 for i, data in enumerate(delivery):
-    deal[i] = data.strip()
+    delivery[i] = data.strip()
 
 for data in delivery:
     print data
