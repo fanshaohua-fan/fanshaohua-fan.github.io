@@ -9,14 +9,23 @@ tags:   docker log
 [OPTIONS]:
 
 None
+
 没有任何参数，打印该容器的所有日志
+
 -f
+
 最常用的指令，类似tail的f选项，显示日志以及更新
+
 --since
+
 显示从某个timestamp开始的日志
+
 -t
+
 同时显示timestamps
+
 --tail=n
+
 从日志末尾的第n行显示
 
 下面是一些样例：
@@ -48,4 +57,3 @@ $ docker logs -t --since='2015-11-27' flask
 2015-11-27T09:29:32.059603285Z 82.217.156.213 - - [27/Nov/2015 09:29:32] "GET / HTTP/1.1" 200 -
 
 ```
-
