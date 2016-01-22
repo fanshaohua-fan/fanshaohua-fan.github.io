@@ -13,14 +13,13 @@ Ubuntu 14.04 Chromium导致黑屏
 今天恰好有时间，搜索了一下解决方案，幸好也解决了，记录下来方便有需要的人。
 
 解决步骤：
-1. 点击设置Setting
-2. 在搜索框Search Setting，输入acceleration
-3. 取消硬件加速“Use hardware acceleration when available”
-4. 重启浏览器Chromium
 
-参考:
+ 1. 点击设置Setting
+ 2. 在搜索框Search Setting，输入acceleration
+ 3. 取消硬件加速“Use hardware acceleration when available”
+ 4. 重启浏览器Chromium
+
+>参考:
 [Issue 443424: 	Ubuntu goes black screen when viewing some webpages](https://code.google.com/p/chromium/issues/detail?id=443424)
-
-
 
 > Written with [StackEdit](https://stackedit.io/).
