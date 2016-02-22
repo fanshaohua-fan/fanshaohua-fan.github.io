@@ -5,7 +5,8 @@ categories: python
 tags:   python scraping html bs4
 ---
 
-###Beautiful Soup
+Beautiful Soup
+-----
 
 之前介绍过如果使用lxml来解析HTML/XML，好处是可以使用Xpath，对于熟悉Xpath的人来说，可能比较方便。
 

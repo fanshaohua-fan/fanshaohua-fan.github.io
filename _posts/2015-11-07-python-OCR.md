@@ -5,9 +5,10 @@ categories: python
 tags:   python ocr pytesseract
 ---
 
-#Python OCR 验证码识别（pytesseract）
+Python OCR 验证码识别（pytesseract）
+-----
 
-####安装
+#### 安装
 
  1. install Python Imaging Library
  2. Install google tesseract-ocr
@@ -20,7 +21,7 @@ sudo apt-get install tesseract-ocr
 sudo pip install pytesseract
 ```
 
-####最小应用
+#### 最小应用
 
 ```python
 from PIL import Image
@@ -31,7 +32,7 @@ pytesseract.image_to_string(ocr)
 '240323'
 ```
 
-####将识别校验码的内容封装为ocr.py
+#### 将识别校验码的内容封装为ocr.py
 
 ```python
 import pytesseract
@@ -52,7 +53,7 @@ def _get_image(url):
 
 ```
 
-####调用ocr的process_image方法
+#### 调用ocr的process_image方法
 以EMS的校验码为例：
 
 ```python

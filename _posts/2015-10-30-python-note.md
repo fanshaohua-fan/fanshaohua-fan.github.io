@@ -12,7 +12,7 @@ tags:   python weixin
 
 使用Flask作为Web服务器,所以需要用Python实现以上的功能.下面是实现过程中遇到的一些问题:
 
-###排序拼接字符串
+#### 排序拼接字符串
 通过使用Str类型的join方法,可以将排序后的字符串列表,拼接为一个字符串.
 
 > join(...)
@@ -28,7 +28,7 @@ lst.sort()
 tmp_str = ''.join(lst)
 ```
 
-###SHA1加密
+#### SHA1加密
 使用Python内置模块hashlib
 
 > openssl_sha1(...)
@@ -43,7 +43,7 @@ sha1 = sha1.hexdigest()
 'd8e6ade66fb7741271995f29a4f9e93090b2a00b'
 ```
 
-###三元表达式
+#### 三元表达式
 按照C的思维写了三元表达式之后,运行报错了:
 X ? V1 : V2
 

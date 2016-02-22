@@ -4,7 +4,8 @@ title:  "Linux 命令 : Date"
 categories: linux
 tags:   linux shell
 ---
-#Linux命令 : Date
+Linux命令 : Date
+-----
 
 显示系统时间
 

@@ -4,7 +4,8 @@ title: "Linux命令: ln"
 categories: linux
 tags:	 linux shell
 ---
-#Linux命令: ln
+Linux命令: ln
+-----
 
 建立软连接:
 

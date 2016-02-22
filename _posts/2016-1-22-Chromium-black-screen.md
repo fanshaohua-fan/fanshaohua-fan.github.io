@@ -5,7 +5,7 @@ categories: ubuntu
 tags:	 ubuntu chromium
 ---
 Ubuntu 14.04 Chromium导致黑屏
-----------
+-----
 
 自从工作电脑切换到Ubuntu之后，被这个问题困扰了好久。
 

@@ -4,8 +4,10 @@ title:  "Python笔记: SQLAlchemy"
 categories: python
 tags:   python database 
 ---
+Python笔记: SQLAlchemy
+-----
 
-###Connecting
+#### Connecting
 
 ```python
 >>> import sqlalchemy
@@ -17,7 +19,7 @@ tags:   python database
 Engine(mysql://root:***@localhost:32768/db)
 ```
 
-###Define and Create Tables
+#### Define and Create Tables
 
 ```python
 >>> from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey
@@ -41,7 +43,7 @@ CREATE TABLE messages (
 
 ```
 
-###Insert Expressions
+#### Insert Expressions
 
 ```python
 >>> ins = messages.insert()

@@ -4,7 +4,8 @@ title:  "Python笔记: HTML Scraping"
 categories: python
 tags:   python xlml html
 ---
-###提取HTML 内容
+提取HTML 内容
+-----
 
 很多公司都提供网页查询的功能，但是不会对公众开发API，所以很多时候，都只能通过解析html来得到我们想要的数据。大部分情况下，只有部分的HTML是有用的。
 这就需要将我们需要的部分，提取出来。比较地道的英文是**HTML Scraping**，直译过来是刮削，就是这个玩意：
