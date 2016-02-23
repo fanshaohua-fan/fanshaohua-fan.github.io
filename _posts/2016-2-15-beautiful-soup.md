@@ -12,7 +12,7 @@ Beautiful Soup
 
 今天简单介绍下另外一个解析HTML（HTML Parsing）的工具Beautiful Soup。
 
-####安装 
+#### 安装 
 由于我使用的是Ubuntu 14.04，可以直接使用Apt-get来安装：
 
 ```bash
@@ -20,7 +20,7 @@ $ sudo apt-get install Python-bs4
 ```
 
 
-####简单使用
+#### 简单使用
 
 ```python
 from bs4 import BeautifulSoup
@@ -28,7 +28,7 @@ from bs4 import BeautifulSoup
 soup = BeautifulSoup(open("mv.html"))
 ```
 
-####搜索文档树
+#### 搜索文档树
 
 ```python
 >>> soup = BeautifulSoup(content)
@@ -44,7 +44,7 @@ soup = BeautifulSoup(open("mv.html"))
 'http://blog.sina.com.cn/s/blog_1517731560102wjw1.html'
 ```
 
-####指定文档解析器
+#### 指定文档解析器
 如果是简单的使用场景，默认的解析器就可以解决问题，也就不必关心使用的是什么解析器。
 
 目前bs支持的解析器和优先顺序如下：

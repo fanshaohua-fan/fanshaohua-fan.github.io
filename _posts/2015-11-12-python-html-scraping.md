@@ -20,7 +20,7 @@ HTML提取比较流行的工具有：
 
 lxml.html的样例有使用XPath，所以决定先通过lxml.html试试，能否到达想要的效果，也顺便复习一下XPatch。
 
-####使用lxml的html 包来提取HTML中的内容
+#### 使用lxml的html 包来提取HTML中的内容
 
 直接上代码：
 
