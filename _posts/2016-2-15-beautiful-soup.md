@@ -23,9 +23,9 @@ $ sudo apt-get install Python-bs4
 #### 简单使用
 
 ```python
-from bs4 import BeautifulSoup
+>>> from bs4 import BeautifulSoup
 # 使用默认解析器
-soup = BeautifulSoup(open("mv.html"))
+>>> soup = BeautifulSoup(open("mv.html"))
 ```
 
 #### 搜索文档树

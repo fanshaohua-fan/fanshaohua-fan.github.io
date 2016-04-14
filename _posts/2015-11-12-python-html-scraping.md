@@ -2,7 +2,7 @@
 layout: post
 title:  "Python笔记: HTML Scraping"
 categories: python
-tags:   python xlml html
+tags:   python lxml html
 ---
 提取HTML 内容
 -----
@@ -25,15 +25,15 @@ lxml.html的样例有使用XPath，所以决定先通过lxml.html试试，能否
 直接上代码：
 
 ```python
-from lxml import html
-tree = html.parse('ems.html').getroot()
-delivery = tree.xpath('//table[@id="showTable"]/tr/td/text()')
+>>> from lxml import html
+>>> tree = html.parse('ems.html').getroot()
+>>> delivery = tree.xpath('//table[@id="showTable"]/tr/td/text()')
 
-for i, data in enumerate(delivery):
-    delivery[i] = data.strip()
+>>> for i, data in enumerate(delivery):
+>>>     delivery[i] = data.strip()
 
-for data in delivery:
-    print data
+>>> for data in delivery:
+>>>     print data
 
 2015-11-10
 06:40:00
@@ -45,11 +45,11 @@ for data in delivery:
 离开处理中心,发往中国 北京
 荷兰
 
-delivery = tree.xpath('//table[@id="showTable"]/tr')
-for tr in delivery:
-    for td in tr.itertext():
-        status += td.strip() + ' '
-    status += '\n'
+>>> delivery = tree.xpath('//table[@id="showTable"]/tr')
+>>> for tr in delivery:
+>>>     for td in tr.itertext():
+>>>         status += td.strip() + ' '
+>>>     status += '\n'
     
  2015-11-10  06:40:00  收寄  荷兰    
  2015-11-11  08:03:00  离开处理中心,发往中国 北京  荷兰    

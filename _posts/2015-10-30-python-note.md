@@ -22,10 +22,10 @@ tags:   python weixin
 > Return a string which is the concatenation of the strings in the iterable.  The separator between elements is S.
 
 ```python
-lst = ['token value', 'timestamp value', 'nonce value']
-lst.sort()
+>>> lst = ['token value', 'timestamp value', 'nonce value']
+>>> lst.sort()
 // ''表示不需要分隔符
-tmp_str = ''.join(lst)
+>>> tmp_str = ''.join(lst)
 ```
 
 #### SHA1加密
@@ -36,10 +36,10 @@ tmp_str = ''.join(lst)
 > Returns a sha1 hash object; optionally initialized with a string
 
 ```python
-import hashlib
-data = 'SHA1 encryption'
-sha1 = hashlib.sha1(data)
-sha1 = sha1.hexdigest()
+>>> import hashlib
+>>> data = 'SHA1 encryption'
+>>> sha1 = hashlib.sha1(data)
+>>> sha1 = sha1.hexdigest()
 'd8e6ade66fb7741271995f29a4f9e93090b2a00b'
 ```
 
@@ -51,9 +51,9 @@ X ? V1 : V2
 V1 if X else V2
 
 ```python
-'Success' if True else 'Failure'
+>>> 'Success' if True else 'Failure'
 'Success'
-'Success' if False else 'Failure'
+>>> 'Success' if False else 'Failure'
 'Failure'
 ```
 
