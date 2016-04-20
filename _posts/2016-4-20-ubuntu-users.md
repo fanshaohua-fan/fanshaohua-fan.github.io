@@ -79,7 +79,8 @@ Ubuntu默认新增的用户是没有sudo权限的，所以不需要做任何额�
 如果需要用户系统管理的权限，可以使用visudo命令，详见[参考资料2](https://www.digitalocean.com/community/tutorials/how-to-add-and-delete-users-on-an-ubuntu-14-04-vps).
 
 > 参考资料：
-> 1. http://man.linuxde.net/passwd
+> 
+> 1. http://man.linuxde.net/passwd 
 > 2. https://www.digitalocean.com/community/tutorials/how-to-add-and-delete-users-on-an-ubuntu-14-04-vps
 
 > Written with [StackEdit](https://stackedit.io/).
