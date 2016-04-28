@@ -1,5 +1,5 @@
-title:            Site Title
-description:      Describe your website here.
+title:            Shaohua Fan's Blog
+description:      Keep It Simple Stupid
 disqus_shortname: 
 reading_time:     true
 words_per_minute: 200
@@ -9,21 +9,15 @@ url:
 
 # Owner/author information
 owner:
-  name:           Your Name
+  name:           Shaohua Fan
   avatar:         avatar.jpg
-  bio:            "Your bio goes here. It shouldn't be super long but a good sentence or two should suffice."
-  email:          you@email.com
+  bio:            "Keep It Simple Stupid."
+  email:          fanshaohua.fan@gmail.com
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        
   facebook:       
-  github:         
+  github:         fanshaohua-fan
   stackexchange:  
   linkedin:       
-  instagram:      
-  flickr:         
-  tumblr:         
-  # google plus id, include the '+', eg +mmistakes
-  google_plus:
 
 # Background image to be tiled on all pages
 background: 
@@ -35,7 +29,7 @@ google_verify:
 bing_verify:         
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    Europe/Amsterdam
 future:      true
 highlighter: rouge
 markdown:    kramdown
@@ -51,7 +45,7 @@ sass:
 permalink:   /:categories/:title/
 
 # Amount of post to show on home page
-paginate: 5
+paginate: 3
 
 kramdown:
   auto_ids: true
