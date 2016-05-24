@@ -76,7 +76,7 @@ Grok is currently the best way in logstash to parse crappy unstructured log data
 
 Grok是提供了很多[基础模板][1]，大部分的情况都可以使用基础的模板来匹配。
 
-``` Json
+``` Ruby
 # text: www.google.com
 # pattern: %{HOSTNAME:host}
 output:
@@ -90,7 +90,8 @@ output:
 ```
 
 当然也可以自定义模板，具体的方式如下：
-```
+
+``` Ruby
 # (?<field_name>the pattern here) 
 # text: text/html
 # pattern: (?<mime>%{WORD:mime_type}/%{WORD:mime_subtype}|-)
@@ -118,7 +119,7 @@ output:
 
 下面的例子展示了如何通过匹配Squild3默认的Access日志：
 
-``` Json
+``` Ruby
 # example
 # 1463987745.513  55287 127.0.0.1 TCP_MISS/200 147235 CONNECT ssl.gstatic.com:443 - HIER_DIRECT/216.58.221.99 -
 # 1463884248.230   2251 127.0.0.1 TCP_MISS/404 491 GET http://tp.client.xunlei.com/update/xml/1.1.2.259_0.xml - HIER_DIRECT/119.188.94.188 text/html
