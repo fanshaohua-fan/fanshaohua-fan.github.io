@@ -57,6 +57,16 @@ input {
 
 ```
 
+很多时候我们需要重复导入，由于Logstach将已经处理过的文件保存在.sincedb的数据库中。
+如果需要重复导入，则需要手动将.sincedb删除。
+
+``` bash
+fan@ubuntu:~$ ls -ltr .sincedb*
+-rw-rw-r-- 1 fan fan 19 Jun 28 15:56 .sincedb_39998516454e71a3e5bbefcf9b8bc709
+fan@ubuntu:~$ rm .sincedb*
+fan@ubuntu:~$ 
+```
+
 #### Output plugin: Stdout
 
 先将输出指向到console，以方便前期验证。
@@ -117,6 +127,8 @@ output:
 
 可以通过[Grokdebug网站][2]验证新建的Grok模板是否正常工作。
 
+
+#### 样例
 下面的例子展示了如何通过匹配Squild3默认的Access日志：
 
 ``` 
