@@ -91,7 +91,7 @@ output:
 
 当然也可以自定义模板，具体的方式如下：
 
-``` Ruby
+``` 
 # (?<field_name>the pattern here) 
 # text: text/html
 # pattern: (?<mime>%{WORD:mime_type}/%{WORD:mime_subtype}|-)
@@ -119,13 +119,37 @@ output:
 
 下面的例子展示了如何通过匹配Squild3默认的Access日志：
 
-``` Ruby
+``` 
 # example
 # 1463987745.513  55287 127.0.0.1 TCP_MISS/200 147235 CONNECT ssl.gstatic.com:443 - HIER_DIRECT/216.58.221.99 -
 # 1463884248.230   2251 127.0.0.1 TCP_MISS/404 491 GET http://tp.client.xunlei.com/update/xml/1.1.2.259_0.xml - HIER_DIRECT/119.188.94.188 text/html
 
-# Grok Pattern
-# %{NUMBER:timestamp}\s+%{NUMBER:duration} %{IPV4:client} (%{WORD:squid_request_status}/%{NUMBER:http_status}) %{NUMBER:reply_size} %{WORD:method} (?<request_url>%{URI}|%{URIHOST}) - (%{WORD:squid_hierarchy_status}/%{IPV4:server_ip}) (?<mime>%{WORD:mime_type}/%{WORD:mime_subtype}|-)
+# configuration
+# The # character at the beginning of a line indicates a comment. Use 
+# comments to describe your configuration. 
+input { 
+    file { 
+        path => "/home/fan/sourcecode/elk/grok/access_10.log" 
+        start_position => beginning  
+        ignore_older => 0  
+    } 
+} 
+# The filter part of this file is commented out to indicate that it is 
+# optional. 
+filter { 
+    grok { 
+        match => { "message" => "%{NUMBER:timestamp}\s+%{NUMBER:duration} %{IPV4:client} (%{WORD:squid_request_status}/%{NUMBER:http_status}) %{NUMBER:reply_size} %{WORD:method} (?<request_url>%{URI}|%{URIHOST}) - (%{WORD:squid_hierarchy_status}/%{IPV4:server_ip}) (?<mime>%{WORD:mime_type}/%{WORD:mime_subtype}|-)" } 
+    } 
+ 
+    date { 
+        match => [ "timestamp", "UNIX" ] 
+    } 
+} 
+output { 
+    elasticsearch { 
+    } 
+} 
+
 
 # output
 {
