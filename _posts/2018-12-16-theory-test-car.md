@@ -5,8 +5,6 @@ categories: dutch-theory-test-car
 tags:  Theory-test 
 ---
 
-## 2018-12-16
-
 ![](2018-12-16-19-57-32.png)
 
 驾照被扣，就不能开车了。
