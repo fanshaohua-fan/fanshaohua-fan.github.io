@@ -26,3 +26,22 @@ tags:  Theory-test
 ![](/images/2018-10-31-06-56-32.png)
 ![](/images/2018-10-31-06-57-26.png)
 
+![](/images/2019-01-16-07-41-08.png)
+
+```
+Bromfiets <= 45 km/h
+Snorfiets <= 25 km/h
+Motorfiets unlimit
+```
+
+![](/images/2019-01-16-07-50-39.png)
+
+![](/images/2019-01-16-07-52-06.png)
+
+![](/images/2019-01-16-07-53-18.png)
+
+![](/images/2019-01-16-07-56-54.png)
+
+![](/images/2019-01-16-08-04-12.png)
+
+
