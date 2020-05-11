@@ -15,6 +15,43 @@ Compose has commands for managing the whole lifecycle of your application:
  - Stream the log output of running services
  - Run a one-off command on a service
 
+## Deploying changes
+
+When you make changes to your app code, remember to rebuild your image and recreate your app’s containers. To redeploy a service called `web`, use:
+
+```bash
+docker-compose build web
+docker-compose up --no-deps -d web
+
+
+$ sudo docker.compose build strapi
+Building strapi
+Step 1/2 : FROM strapi/strapi:3.0.0-beta.19.3-alpine
+ ---> 25c6ef17defb
+Step 2/2 : COPY ./app /srv/app
+ ---> e798677fed49
+Successfully built e798677fed49
+Successfully tagged strapi3_strapi:latest
+
+$ sudo docker.compose images
+   Container       Repository    Tag       Image Id      Size 
+--------------------------------------------------------------
+strapi3_strapi_1   <none>       <none>   87fc37c874d5   368 MB
+$ sudo docker.compose up --no-deps -d strapi
+Recreating strapi3_strapi_1 ... done
+$ sudo docker.compose ps
+      Name                    Command               State           Ports         
+----------------------------------------------------------------------------------
+strapi3_strapi_1   docker-entrypoint.sh strap ...   Up      0.0.0.0:9080->1337/tcp
+$ sudo docker.compose images
+   Container         Repository      Tag       Image Id      Size 
+------------------------------------------------------------------
+strapi3_strapi_1   strapi3_strapi   latest   e798677fed49   368 MB
+$
+```
+
+This first rebuilds the image for web and then stop, destroy, and recreate just the web service. The `--no-deps` flag prevents Compose from also recreating any services which `web` depends on.
+
 ## Control startup order
 
 [Control startup and shutdown order in Compose](https://docs.docker.com/compose/startup-order/)
