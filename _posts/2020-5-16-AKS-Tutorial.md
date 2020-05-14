@@ -235,7 +235,7 @@ In this tutorial, part seven of seven, a Kubernetes cluster is upgraded. You lea
 az aks get-upgrades --resource-group loyalty-cloud-testing-resourcegroup --name loyalty-cloud-testing-cluster --output=table
 
 # Upgrade
-az aks upgrade --resource-group myResourceGroup --name myAKSCluster --kubernetes-version 1.15.5
+az aks upgrade --resource-group myResourceGroup --name myAKSCluster --kubernetes-version 1.16.5
 
 # Verify
 az aks show --resource-group loyalty-cloud-testing-resourcegroup --name loyalty-cloud-testing-cluster --output table
