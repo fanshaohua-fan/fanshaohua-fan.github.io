@@ -69,6 +69,8 @@ sudo docker tag azure-vote-front loyaltycloud.azurecr.io/azure-vote-front:v1
 docker push loyaltycloud.azurecr.io/azure-vote-front:v1
 
 az acr repository list --name loyaltycloud --output table
+az acr repository show  -n loyaltycloud --repository azure-vote-front
+az acr repository show-tags  -n loyaltycloud --repository azure-vote-front
 ```
 
 ### Deploy an Azure Kubernetes Service (AKS) cluster
@@ -180,3 +182,61 @@ You learn how to:
 - Create an updated container image
 - Push the container image to Azure Container Registry
 - Deploy the updated container image
+
+```bash
+# Update the container image
+docker-compose up --build -d
+
+# Tag and push the image
+docker tag azure-vote-front loyaltycloud.azurecr.io/azure-vote-front:v2
+docker push loyaltycloud.azurecr.io/azure-vote-front:v2
+
+# Deploy the updated application
+kubectl get pods
+
+kubectl set image deployment azure-vote-front azure-vote-front=loyaltycloud.azurecr.io/azure-vote-front:v2
+
+# Verify
+kubectl get pods
+NAME                                READY   STATUS              RESTARTS   AGE
+azure-vote-back-5775d78ff5-98rls    1/1     Running             0          16h
+azure-vote-front-58869f478c-db5xw   1/1     Running             0          13s
+azure-vote-front-58869f478c-f2tzt   0/1     ContainerCreating   0          4s
+azure-vote-front-58869f478c-p65vl   1/1     Running             0          13s
+azure-vote-front-5b4f7cc4f8-9cml7   0/1     Terminating         0          16h
+azure-vote-front-5b4f7cc4f8-bgdhb   1/1     Terminating         0          16h
+
+kubectl get pods
+NAME                                READY   STATUS    RESTARTS   AGE
+azure-vote-back-5775d78ff5-98rls    1/1     Running   0          16h
+azure-vote-front-58869f478c-db5xw   1/1     Running   0          51s
+azure-vote-front-58869f478c-f2tzt   1/1     Running   0          42s
+azure-vote-front-58869f478c-p65vl   1/1     Running   0          51s
+
+kubectl get replicaset
+NAME                          DESIRED   CURRENT   READY   AGE
+azure-vote-back-5775d78ff5    1         1         1       16h
+azure-vote-front-58869f478c   3         3         3       2m27s
+azure-vote-front-5b4f7cc4f8   0         0         0       16h
+```
+
+### Upgrade Kubernetes cluster
+
+As part of the application and cluster lifecycle, you may wish to upgrade to the latest available version of Kubernetes and use new features. An Azure Kubernetes Service (AKS) cluster can be upgraded using the Azure CLI.
+
+In this tutorial, part seven of seven, a Kubernetes cluster is upgraded. You learn how to:
+
+- Identify current and available Kubernetes versions
+- Upgrade the Kubernetes nodes
+- Validate a successful upgrade
+
+```bash
+# Get available cluster versions
+az aks get-upgrades --resource-group loyalty-cloud-testing-resourcegroup --name loyalty-cloud-testing-cluster --output=table
+
+# Upgrade
+az aks upgrade --resource-group myResourceGroup --name myAKSCluster --kubernetes-version 1.15.5
+
+# Verify
+az aks show --resource-group loyalty-cloud-testing-resourcegroup --name loyalty-cloud-testing-cluster --output table
+```
