@@ -71,6 +71,11 @@ docker push loyaltycloud.azurecr.io/azure-vote-front:v1
 az acr repository list --name loyaltycloud --output table
 az acr repository show  -n loyaltycloud --repository azure-vote-front
 az acr repository show-tags  -n loyaltycloud --repository azure-vote-front
+
+az acr repository show-tags  -n loyaltycloud --repository rewards-grpc
+az acr repository show-manifests  -n loyaltycloud --repository rewards-grpc
+
+az acr repository show-manifests  -n loyaltycloud --repository customers-grpc
 ```
 
 ### Deploy an Azure Kubernetes Service (AKS) cluster
@@ -138,6 +143,19 @@ kubectl -n demo get daemonset
 kubectl -n demo get ingress
 kubectl -n demo get cronjob
 
+# Update your app manually via kubectl
+kubectl -n lc-demo set image deployments/rewards-grpc-v1 rewards-grpc=loyaltycloud.azurecr.io/rewards-grpc@sha256:a0688453080e6715b8486625a8a12888418d35b4b3918519ef0b327396f75ae3
+deployment.extensions/rewards-grpc-v1 image updated
+
+kubectl -n lc-demo rollout status deployments/rewards-grpc-v1
+deployment "rewards-grpc-v1" successfully rolled out
+
+kubectl -n lc-demo rollout history deployments/rewards-grpc-v1
+deployment.extensions/rewards-grpc-v1 
+REVISION  CHANGE-CAUSE
+1         <none>
+2         <none>
+3         <none>
 ```
 
 ### Scale applications
