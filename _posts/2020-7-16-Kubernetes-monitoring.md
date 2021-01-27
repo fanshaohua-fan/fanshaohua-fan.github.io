@@ -24,9 +24,24 @@ curl -L https://istio.io/downloadIstio | sh -
 cd istio-1.6.5
 export PATH=$PWD/bin:$PATH
 
+istioctl install --set profile=demo
+
 # View the dashboard
 istioctl dashboard kiali
 ```
+
+**Deploy the sample application**
+
+```bash
+# Deploy the Bookinfo sample application
+kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml
+# The application will start. As each pod becomes ready, the Istio sidecar will be deployed along with it.
+kubectl get pods
+# Verify everything is working correctly up to this point. 
+kubectl exec "$(kubectl get pod -l app=ratings -o jsonpath='{.items[0].metadata.name}')" -c ratings -- curl -s productpage:9080/productpage | grep -o "<title>.*</title>"
+<title>Simple Bookstore App</title>
+```
+
 
 ### K8s Port-forwarding
 
