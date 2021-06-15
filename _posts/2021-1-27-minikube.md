@@ -8,6 +8,11 @@ tags:   k8s minikube
 ## Installation
 
 ```
+https://minikube.sigs.k8s.io/docs/start/
+```
+## Start your cluster
+
+```
 minikube start
 ```
 
