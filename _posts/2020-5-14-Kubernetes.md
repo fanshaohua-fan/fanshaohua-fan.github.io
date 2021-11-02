@@ -58,3 +58,13 @@ Git -> Build pipeline -> ACR -> K8s clusters
 - certificate
 
 Secret is a collection of key/value pairs, stored in etcd.
+
+## Problem solving
+
+### Make changes on certain resource
+
+```bash
+kg get job analytics-calculate-dashboard-1635811200 -o json
+
+kg edit job analytics-calculate-dashboard-1635811200 -o json
+```
