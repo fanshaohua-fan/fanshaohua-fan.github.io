@@ -74,17 +74,106 @@ SetMetadataAsync
 
 ### [Page 10](https://www.examtopics.com/exams/microsoft/az-204/view/10/)
 
-8.
+8. N
+
+https://docs.microsoft.com/en-us/azure/event-grid/compare-messaging-services
+
+|Service|	Purpose|	Type|	When to use|
+|--|--|--|--|
+|Event Grid|	Reactive programming|	Event distribution (discrete)|	React to status changes
+|Event Hubs|	Big data pipeline|	Event streaming (series)|	Telemetry and distributed data streaming
+|Service Bus|	High-value enterprise messaging|	Message|	Order processing and financial transactions
+
+9. A
 
 
-9.
+10. 
+Create
+Upgrade
+Copy
 
 
-10.
+11. C
 
 
-11.
+12. A
+
+### [Page 11](https://www.examtopics.com/exams/microsoft/az-204/view/11/)
+
+13. 
+metadata/identiry
+
+new NetworkCredential
+
+14. 
+orderBy X
+
+descending
+
+https://docs.microsoft.com/en-us/azure/cosmos-db/sql/how-to-manage-indexing-policy?tabs=dotnetv2%2Cpythonv3#composite-index
 
 
-12.
 
+15. 
+4   X
+
+Department  X
+
+Partitions relate to producers - and the logical way to partition the incoming data is by the only value you have at that point, the highway name/id. So the selected answer is correct (6 Partitions, by Highway).
+
+
+16. 
+Helm
+
+kubectl
+
+ingress controller
+
+17. 
+NoFilter    X should be SQL/Correlation Filter
+
+SQLFilter*3
+
+NoFilter
+
+
+https://docs.microsoft.com/en-us/azure/service-bus-messaging/topic-filters#filters
+
+![](/images/2022-02-06-06-25-32.png)
+
+### [Page 12](https://www.examtopics.com/exams/microsoft/az-204/view/12/)
+
+18. 
+
+19. 
+
+20. 
+
+21. 
+
+22. 
+
+### [Page 13](https://www.examtopics.com/exams/microsoft/az-204/view/13/)
+
+23. 
+
+24. 
+
+25. 
+
+26. 
+
+27. 
+
+
+### [Page 14](https://www.examtopics.com/exams/microsoft/az-204/view/14/)
+
+28. 
+
+29. 
+
+30. 
+
+31. 
+
+32. 
