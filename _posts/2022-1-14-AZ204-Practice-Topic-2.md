@@ -144,36 +144,32 @@ https://docs.microsoft.com/en-us/azure/service-bus-messaging/topic-filters#filte
 ### [Page 12](https://www.examtopics.com/exams/microsoft/az-204/view/12/)
 
 18. 
+User request -> No edge servers has image in the cache -> origin server returns images -> subsequent
 
 19. 
+CE  X   DE
 
-20. 
+C. a single property value that appears frequently in the documents
+
+D. a concatenation of multiple property values with a random suffix appended
+
+https://docs.microsoft.com/en-us/azure/cosmos-db/synthetic-partition-keys
+
+
+20.
+Y
+
+Y
+
+Y 
 
 21. 
+Host    X
 
-22. 
+Lease container
 
-### [Page 13](https://www.examtopics.com/exams/microsoft/az-204/view/13/)
+Monitored container X
 
-23. 
+Delegate
 
-24. 
-
-25. 
-
-26. 
-
-27. 
-
-
-### [Page 14](https://www.examtopics.com/exams/microsoft/az-204/view/14/)
-
-28. 
-
-29. 
-
-30. 
-
-31. 
-
-32. 
+![](/images/2022-02-07-19-38-20.png)
