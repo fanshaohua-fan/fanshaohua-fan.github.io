@@ -25,20 +25,28 @@ https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-regis
 
 ### [Page 13](https://www.examtopics.com/exams/microsoft/az-204/view/13/)
 
-2. 
+2. AC   X BC
 
-3. 
+Prerequisites:
 
-4. 
+A working Azure AD tenant with at least an Azure AD Premium P1 or trial license enabled.
 
-5. 
+The recommended way to enable and use Azure AD Multi-Factor Authentication is with Conditional Access policies.
 
-6. 
+https://docs.microsoft.com/en-us/azure/active-directory/authentication/tutorial-enable-azure-mfa
 
-7. 
+3. C
+
+4. B
+
+5. Y
+
+6. Y
 
 
 ### [Page 14](https://www.examtopics.com/exams/microsoft/az-204/view/14/)
+
+7. 
 
 8. 
 
@@ -48,4 +56,27 @@ https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-regis
 
 11. 
 
+### [Page 15](https://www.examtopics.com/exams/microsoft/az-204/view/15/)
+
 12. 
+
+13. 
+
+14. 
+
+15. 
+
+16. 
+
+
+### [Page 16](https://www.examtopics.com/exams/microsoft/az-204/view/16/)
+
+17. 
+
+18. 
+
+19. 
+
+20. 
+
+21. 
