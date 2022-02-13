@@ -47,14 +47,25 @@ https://docs.microsoft.com/en-us/azure/active-directory/authentication/tutorial-
 ### [Page 14](https://www.examtopics.com/exams/microsoft/az-204/view/14/)
 
 7. 
+Soft deletion
+
+Purge protection
 
 8. 
+AD
 
-9. 
+9.
+client_id, application, profile     X
+
+
 
 10. 
+UseAuth
+UseAuthorization
+UseAzureAppConfiguration
 
 11. 
+C
 
 ### [Page 15](https://www.examtopics.com/exams/microsoft/az-204/view/15/)
 
