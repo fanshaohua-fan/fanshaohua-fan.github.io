@@ -69,15 +69,29 @@ C
 
 ### [Page 15](https://www.examtopics.com/exams/microsoft/az-204/view/15/)
 
-12. 
+12. Y
 
-13. 
+13. Y   X
 
-14. 
+The requirement is to save scanned copies of patient intake forms.
+Which is kind of unstructured data, should not be saved with cosmos db.
+Using azure blob storage instead.
+
+14. N
 
 15. 
+keyvault
+
+keyvault key
+
+vm
+
+vm encryption
+
+data X all
 
 16. 
+C
 
 
 ### [Page 16](https://www.examtopics.com/exams/microsoft/az-204/view/16/)
@@ -91,3 +105,28 @@ C
 20. 
 
 21. 
+
+### [Page 17](https://www.examtopics.com/exams/microsoft/az-204/view/17/)
+
+22. 
+
+23. 
+
+24. 
+
+25. 
+
+26. 
+
+
+### [Page 18](https://www.examtopics.com/exams/microsoft/az-204/view/18/)
+
+27. 
+
+28. 
+
+29. 
+
+30. 
+
+31. 
