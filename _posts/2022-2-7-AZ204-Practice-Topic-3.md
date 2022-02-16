@@ -97,26 +97,58 @@ C
 ### [Page 16](https://www.examtopics.com/exams/microsoft/az-204/view/16/)
 
 17. 
+5->3->4->2->1
+
+X
+
+5->3->2->1->4
 
 18. 
+N
 
 19. 
+Y   X
+
+Role-based access control is used for authorization and not authentication.
 
 20. 
+Device
+
+iPhone  X iOS
+
+Header
+
+User_agent
+
+iPhone
 
 21. 
+Y   X
 
 ### [Page 17](https://www.examtopics.com/exams/microsoft/az-204/view/17/)
 
 22. 
+Y
 
 23. 
+optionalClaims
+
+requiredResourceAccess
+
+https://docs.microsoft.com/en-US/azure/active-directory/develop/reference-app-manifest?WT.mc_id=Portal-Microsoft_AAD_RegisteredApps
+
+![](/images/2022-02-16-21-25-15.png)
 
 24. 
+B
 
 25. 
+B   X   A
+
+![](/images/2022-02-16-21-18-02.png)
 
 26. 
+D
 
 
 ### [Page 18](https://www.examtopics.com/exams/microsoft/az-204/view/18/)
@@ -130,3 +162,28 @@ C
 30. 
 
 31. 
+
+### [Page 19](https://www.examtopics.com/exams/microsoft/az-204/view/19/)
+
+32. 
+
+33. 
+
+34. 
+
+35. 
+
+36. 
+
+
+### [Page 20](https://www.examtopics.com/exams/microsoft/az-204/view/20/)
+
+37. 
+
+38. 
+
+39. 
+
+40. 
+
+41. 
