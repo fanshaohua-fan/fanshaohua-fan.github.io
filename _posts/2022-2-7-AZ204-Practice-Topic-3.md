@@ -154,14 +154,34 @@ D
 ### [Page 18](https://www.examtopics.com/exams/microsoft/az-204/view/18/)
 
 27. 
+D
 
 28. 
+Inbound
+
+Inbound
+
+Outbound
+Outbound
 
 29. 
+SecretClient
+
+ClientSecretCredential  X   DefaultAzureCredential
+
+This example is using 'DefaultAzureCredential()' class from Azure Identity Library, which allows to use the same code across different environments with different options to provide identity. For more information about authenticating to key vault, see Developer's Guide.
+
+https://docs.microsoft.com/en-us/azure/key-vault/secrets/quick-create-net#authenticate-and-create-a-client
 
 30. 
+AB
 
-31. 
+31.
+AC  X   AD
+
+The question requires to use SAS token, C is not correct.
+
+https://docs.microsoft.com/en-us/rest/api/storageservices/create-user-delegation-sas#revoke-a-user-delegation-sas
 
 ### [Page 19](https://www.examtopics.com/exams/microsoft/az-204/view/19/)
 
