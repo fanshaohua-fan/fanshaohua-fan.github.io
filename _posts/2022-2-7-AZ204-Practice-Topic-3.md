@@ -186,15 +186,45 @@ https://docs.microsoft.com/en-us/rest/api/storageservices/create-user-delegation
 ### [Page 19](https://www.examtopics.com/exams/microsoft/az-204/view/19/)
 
 32. 
+Generate key blob-> Generate KEK-> Retrieve KEk-> key import
+
+X
+
+Generate KEK-> Retrieve KEk-> Generate key blob-> key import
+
+User steps
+To perform a key transfer, a user performs following steps:
+
+1. Generate KEK.
+2. Retrieve the public key of the KEK.
+3. Using HSM vendor provided BYOK tool - Import the KEK into the target HSM and exports the Target Key protected by the KEK.
+4. Import the protected Target Key to Azure Key Vault.
+
+Customers use the BYOK tool and documentation provided by HSM vendor to complete Steps 3. It produces a Key Transfer Blob (a ".byok" file).
+
+https://docs.microsoft.com/en-us/azure/key-vault/keys/byok-specification
 
 33. 
+A
 
 34. 
+YYYY
 
 35. 
+AC
 
-36. 
 
+
+36.
+Y   X N
+
+N
+
+Y
+
+![](/images/2022-02-19-16-45-14.png)
+
+https://docs.microsoft.com/en-us/azure/cosmos-db/how-to-choose-offer
 
 ### [Page 20](https://www.examtopics.com/exams/microsoft/az-204/view/20/)
 
@@ -207,3 +237,15 @@ https://docs.microsoft.com/en-us/rest/api/storageservices/create-user-delegation
 40. 
 
 41. 
+
+### [Page 21](https://www.examtopics.com/exams/microsoft/az-204/view/21/)
+
+42. 
+
+43. 
+
+44. 
+
+45. 
+
+46. 
