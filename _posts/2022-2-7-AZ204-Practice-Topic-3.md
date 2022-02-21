@@ -229,12 +229,9 @@ https://docs.microsoft.com/en-us/azure/cosmos-db/how-to-choose-offer
 ### [Page 20](https://www.examtopics.com/exams/microsoft/az-204/view/20/)
 
 37. 
+Builder
+scopes
 
-38. 
-
-39. 
-
-40. 
 
 41. 
 
@@ -249,3 +246,15 @@ https://docs.microsoft.com/en-us/azure/cosmos-db/how-to-choose-offer
 45. 
 
 46. 
+
+### [Page 22](https://www.examtopics.com/exams/microsoft/az-204/view/22/)
+
+47. 
+
+48. 
+
+49. 
+
+50. 
+
+51. 
