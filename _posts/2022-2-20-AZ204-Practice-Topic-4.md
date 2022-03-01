@@ -87,15 +87,22 @@ User flows
 
 ### [Page 22](https://www.examtopics.com/exams/microsoft/az-204/view/22/)
 
-10. 
+10. B   X   A
 
-11. 
+11. AD
 
-12. 
+12. A
 
-13. 
+13. A
 
 14. 
+ago
+
+distinct
+
+where
+
+summarize count()
 
 ### [Page 23](https://www.examtopics.com/exams/microsoft/az-204/view/23/)
 
@@ -109,3 +116,28 @@ User flows
 18. 
 
 19. 
+
+### [Page 23](https://www.examtopics.com/exams/microsoft/az-204/view/23/)
+
+20. 
+
+21. 
+
+22. 
+
+23. 
+
+24. 
+
+### [Page 24](https://www.examtopics.com/exams/microsoft/az-204/view/24/)
+
+
+25. 
+
+26. 
+
+27. 
+
+28. 
+
+29. 
