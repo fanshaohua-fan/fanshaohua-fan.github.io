@@ -108,14 +108,79 @@ summarize count()
 
 
 15. 
+config 
 
-16. 
+--docker-container-log
+
+webapp
+
+tail
+
+
+```sh
+az webapp log config -h
+
+Command
+    az webapp log config : Configure logging for a web app.
+
+Arguments
+    --application-logging      : Configure application logging.  Allowed values: azureblobstorage,
+                                 filesystem, off.
+    --detailed-error-messages  : Configure detailed error messages.  Allowed values: false, true.
+    --docker-container-logging : Configure gathering STDOUT and STDERR output from container.
+                                 Allowed values: filesystem, off.
+    --failed-request-tracing   : Configure failed request tracing.  Allowed values: false, true.
+    --level                    : Logging level.  Allowed values: error, information, verbose,
+                                 warning.
+    --slot -s                  : The name of the slot. Default to the productions slot if not
+                                 specified.
+    --web-server-logging       : Configure Web server logging.  Allowed values: filesystem, off.
+
+az webapp log -h
+
+Group
+    az webapp log : Manage web app logs.
+
+Subgroups:
+    deployment [Preview] : Manage web app deployment logs.
+
+Commands:
+    config               : Configure logging for a web app.
+    download             : Download a web app's log history as a zip file.
+    show                 : Get the details of a web app's logging configuration.
+    tail                 : Start live log tracing for a web app.
+```
+
+16. BC
+
+### Types of tests
+There are four types of availability tests:
+
+- URL ping test (classic): You can create this simple test through the portal to validate whether an endpoint is responding and measure performance associated with that response. You can also set custom success criteria coupled with more advanced features, like parsing dependent requests and allowing for retries.
+- Standard test (Preview): This single request test is similar to the URL ping test. It includes SSL certificate validity, proactive lifetime check, HTTP request verb (for example GET, HEAD, or POST), custom headers, and custom data associated with your HTTP request.
+- Multi-step web test (classic): You can play back this recording of a sequence of web requests to test more complex scenarios. Multi-step web tests are created in Visual Studio Enterprise and uploaded to the portal, where you can run them.
+- Custom TrackAvailability test: If you decide to create a custom application to run availability tests, you can use the TrackAvailability() method to send the results to Application Insights.
+
+https://docs.microsoft.com/en-us/azure/azure-monitor/app/availability-overview
+
 
 17. 
 
-18. 
+internal    X   External
 
-19. 
+consumption plan doesn't support build-in cache.
+
+private
+
+Authorization
+
+https://docs.microsoft.com/en-us/azure/api-management/api-management-caching-policies#CachingPolicies
+
+![](/images/2022-03-02-20-28-54.png)
+
+18. D
+
+19. A
 
 ### [Page 23](https://www.examtopics.com/exams/microsoft/az-204/view/23/)
 
