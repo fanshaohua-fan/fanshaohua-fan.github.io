@@ -182,27 +182,25 @@ https://docs.microsoft.com/en-us/azure/api-management/api-management-caching-pol
 
 19. A
 
-### [Page 23](https://www.examtopics.com/exams/microsoft/az-204/view/23/)
-
-20. 
-
-21. 
-
-22. 
-
-23. 
-
-24. 
-
 ### [Page 24](https://www.examtopics.com/exams/microsoft/az-204/view/24/)
 
+20. 
+Register -> Build -> Create auth provider -> Create new instance -> Invoke
 
-25. 
 
-26. 
+21. 
+Storage -> Log Analytics -> diagnostic settings to Azure Logic App
 
-27. 
+X
 
-28. 
+Log Analytics -> Install LogicApp Management solution -> diagnostic settings to Azure Logic App
 
-29. 
+To set up logging for your logic app, you can enable Log Analytics when you create your logic app, or you can install the Logic Apps Management solution in your
+Log Analytics workspace for existing logic apps.
+
+22. 
+Log -> ApplicationInsight -> Install -> VMInsight
+
+X
+
+Log -> VMInsight -> Install -> ApplicationInsight
